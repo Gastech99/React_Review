@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Buttons({content}) {
+function Buttons({content, click}) {
   return (
     <>
-        <button>{content}</button>
+        <button onClick={click}>{content}</button>
     </>
   )
 }
