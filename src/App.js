@@ -1,19 +1,20 @@
+import { useState } from 'react';
 import './App.css';
 import Buttons from './components/Buttons';
 import Counter from './components/Counter';
 
 function App() {
   // initialisation de la variable
-  let number = 0
+  const [number, setNumber] = useState(90)
 
   // Création des fonctions add et substract
   function add (){
-    number ++
+    setNumber(number + 1)
     console.log(number)
   }
 
   function substract (){
-    number --
+    setNumber(number - 1)
     console.log(number)
   }
 
